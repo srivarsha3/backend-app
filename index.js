@@ -41,7 +41,7 @@ app.use("/store", storeRouter);
 app.use("/orders",authenticateUser,orderRouter)
 app.use("/", authenticateAdmin, homeRouter);
 app.use("/products", authenticateAdmin, productRouter);
-app.use("/users", authenticateAdmin, userRouter);
+app.use("/users",authenticateAdmin,  userRouter);
 
 
 const startServer = async () => {
